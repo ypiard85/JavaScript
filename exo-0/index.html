@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+
+        <script type="text/javascript">
+
+        /* Section 1 */   
+
+        var name = "Joe";
+        var city = 'London';
+        var age = 32;
+        var isRed = true;
+        var isOld = age > 80;
+
+        var previousJobs = ['lawyer', 'developper', 'Professionnal climber'];
+
+        var house = {
+            name: "Joe's house",
+            rooms: 5,
+            garage: false,
+            bathrooms: 1 + 2,
+            cars: ['Clio', 'Van'],
+        };
+
+        var children = [
+            { name: 'Bill', age: 3 },
+            { name: 'Alice', age: 9 },
+            { name: 'Max', age: 16 },
+        ];
+
+        function info(height, weight) {
+            if (height > 180) {
+                console.log('Vous êtes grand');
+            }
+            if (weight < 0) {
+                console.log('oups, there is a problem');
+            } else if ( weight < 15) {
+                console.log('Are you that slim ?')
+            } else {
+                console.log('Good !')
+            }
+        }
+
+        info(165, 45);
+
+        var myHeight = 175;
+        var myWeight = 86;
+
+        info(myHeight, myWeight);
+
+        info(myHeight + 15, myWeight - 100);
+
+        function toUpper(variable) {
+            return variable.toUpperCase();
+        }
+
+        var upperName = toUpper(name);
+
+        for (i = 0; i < 3; i = i + 1) {
+            children[i].age = 14;
+        }
+
+        var a = toto('greger');
+
+        /* Section 2: */
+
+        // afficher la ville dans laquele Joe vit.     
+
+        // afficher si Joe est roux ou pas.
+
+        // afficher le nombre d'enfant de Joe
+
+        // afficher l'age d'Alice.
+
+
+        /* Section 3 */
+
+        // console.log(myVariable); 
+
+        </script>
+
+    </body>
+</html>
