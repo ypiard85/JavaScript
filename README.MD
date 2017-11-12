@@ -179,6 +179,8 @@ Utiliser les méthodes `join('')` et `toUpperCase()` pour un bon formattage.
 
 # Exo-6 : Les objets
 
+Vous devez avoir fait le cours 8 ( exercices 1 à 7 ) de CodeAcademy pour faire cet exercice.
+
 Nous voulons créer et extraire des informations à propos de votre équipe de sports préférés. ( Basketball, soccer, tennis, or water polo... vous choississez )
 C'est votre boulot de créer ces informations en utilisant les structures de données en Javascript appropriées : arrays, objects, etc.
 
