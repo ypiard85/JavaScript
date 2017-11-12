@@ -1,11 +1,11 @@
 # Exercices 
 
-Afin de faire ces exercices, il est préférable d'avoir réalisé les cours de 1 à 6 du site [codecademy](https://www.codecademy.com/).
+Afin de faire ces exercices, il est préférable d'avoir réalisé les tutoriels de 1 à 6 du site [codecademy](https://www.codecademy.com/).
 Une fois fait, ces exercices vous permettront de valider les acquis.
 
 # Exo-0 - Lecture de code Javascript.
 
-Avant d'écrire du code javascript, il est de savoir en lire, c'est le but de cette partie.
+Avant d'écrire du code javascript, il est important de savoir en lire, c'est le but de cette partie.
 
 Rendez vous dans le répertoire exo-0
 
@@ -67,9 +67,9 @@ et relancer le programme.
 
 Vous avez été recruté pour écrire un programme pour gérer les inscriptions d'une course à pied. Tous les adultes courront le matin et tous les personnes qui ont moins de 18 ans l'après midi. Suivez les instructions afin de développer la logique du programme.
 
-1. Créer une variable pour stocker si un coureur est déjà inscrit ou pas.
+1. Créer une variable pour stocker si un coureur est déjà inscrit ou pas. Quel est le type de cette variable ?
 
-2. Créer une variable pour stocker l'age du coureur.
+2. Créer une variable pour stocker l'âge du coureur.
 
 3. Une personne qui s'inscrit un jour à un numéro de coureur supérieur à quelqu'un inscrit plus tôt. Ecrire une condition qui vérifie si la personne n'est pas déjà inscrite. Ajouter 1000 à son numéro si ce n'est pas le cas.
 Vous pouvez utiliser cette expression pour avoir un numéro de coureur aléatoire.
@@ -82,7 +82,7 @@ Vous pouvez utiliser cette expression pour avoir un numéro de coureur aléatoir
 
 5. Entrer différentes combinaisons de valeurs pour les deux variables et vérifier le bon fonctionnement de votre programme.
 
-6. Ajouter un block `else` dans votre code disant simplement : 'Go to see the registration desk'.
+6. Ajouter un block `else` dans votre code disant simplement : 'Go to see the registration desk' pour les personnes ne rentrant pas dans les cas précédents.
 
 
 # Exo-3 - Les fonctions
