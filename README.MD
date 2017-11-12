@@ -1,4 +1,4 @@
-# Exercices 
+# Activités Javascript 
 
 Afin de faire ces exercices, il est préférable d'avoir réalisé les tutoriels de 1 à 6 du site [codecademy](https://www.codecademy.com/).
 Une fois fait, ces exercices vous permettront de valider les acquis.
@@ -19,7 +19,7 @@ Par exemple :
 var a = 38; // je déclare une variable nommée a qui prend pour valeur l'entier 38.
 ```
 
-Faire une fiche mémo qui reprends les différentes expressions.
+Faire ou compléter une fiche mémo qui reprends les différentes expressions.
 
 ## Section 2 : Utilisation de la console
 
