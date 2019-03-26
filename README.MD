@@ -1,4 +1,4 @@
-# Activités Javascript 
+# Activités Javascript
 
 Afin de faire ces exercices, il est préférable d'avoir réalisé les tutoriels de 1 à 6 du site [codecademy](https://www.codecademy.com/).
 Une fois fait, ces exercices vous permettront de valider les acquis.
@@ -11,7 +11,7 @@ Rendez vous dans le répertoire exo-0
 
 ## Section 1 : Commentaires
 
-L'objectif est de commenter chaque ligne de code avec une phrase en Français.
+L'objectif est de commenter **chaque ligne de code** du fichier `index.html` avec une phrase en français qui explique ce qu'elle fait.
 
 Par exemple :
 
@@ -33,7 +33,7 @@ Décommenter la ligne puis recharger la page.
 // console.log(myVariable);
 ```
 
-Que se passe t'il et pourquoi ?
+Que se passe-t-il et pourquoi ?
 
 # Exo-1 - Les variables
 
@@ -71,13 +71,13 @@ Vous avez été recruté pour écrire un programme pour gérer les inscriptions 
 
 2. Créer une variable pour stocker l'âge du coureur.
 
-3. Une personne qui s'inscrit un jour à un numéro de coureur supérieur à quelqu'un inscrit plus tôt. Ecrire une condition qui vérifie si la personne n'est pas déjà inscrite. Ajouter 1000 à son numéro si ce n'est pas le cas.
+3. Chaque personne qui s'inscrit a un numéro de coureur supérieur à celui inscrit auparavant. Ecrire une condition qui vérifie si la personne n'est pas déjà inscrite, et ajouter 1000 à son numéro si ce n'est pas le cas.
 Vous pouvez utiliser cette expression pour avoir un numéro de coureur aléatoire.
 `var raceNumber = Math.floor(Math.random()*1000);`
 
 4. Ecrire une nouvelle condition en dessous de la première permettant d'afficher pour :
     1. Les personnes qui ont plus de 18 ans et déjà inscrites : 'You will race at 9:30 am'
-    2. Les personnes déjà inscrites ou qui ont plus de 18 ans ( mais pas les deux ) 'You will race at 11:00 am ' plus leur numéro de dossard. 
+    2. Les personnes déjà inscrites ou qui ont plus de 18 ans ( mais pas les deux ) 'You will race at 11:00 am ' plus leur numéro de dossard.
     3. Les personnes de moins de 18 ans ou qui ne sont pas encore inscrites. 'You will race at 12:30 pm ' plus leur numéro de dossard.
 
 5. Entrer différentes combinaisons de valeurs pour les deux variables et vérifier le bon fonctionnement de votre programme.
@@ -102,7 +102,7 @@ Notre code va se décomposer en 4 parties :
 3. Nous devons aussi nous assurer que l'utilisateur rentre bien un des trois choix : 'rock', 'paper', ou 'scissors'.
 A l'intérieur de la fonction `getUserChoice()`, écrire une condition qui vérifie que la valeur rentrée par l'utilisateur est bien l'une des trois attendues i.e. 'rock', 'paper', ou 'scissors'. Si c'est le cas, la fonction retourne la chaine de caractères `userInput`, sinon afficher un message d'erreur dans la console.
 
-4. Maintenant c'est à l'ordinateur de faire un choix. 
+4. Maintenant c'est à l'ordinateur de faire un choix.
 Créer une nouvelle fonction `getComputerChoice()` qui ne prends pas de paramètre.
 A l'intérieur, en utilisant la fonction `Math.random()`, tirer un nombre aléatoire entre 0 et 2. Ensuite, étant donné le résultat, la fonction doit retourner 'rock', 'paper', ou 'scissors'.
 
@@ -159,10 +159,10 @@ Pour faire cette traduction, nous allons utiliser des boucles.
 1. Créer une variable nommée `input` qui prends pour valeur n'importe quelle phrase ou mot à traduire.
 
 2. Nous allons aussi créer un tableau de lettres. Puisque la langue des baleines contient que des voyelles, créer une variable `vowels` de type tableau contenant toutes les voyelles.
- 
+
 3. Nous allons stocker la chaine traduite dans un tableau. Créer donc une variable `resultArray` dont la valeur est un tableau vide.
 
-4. Maintenant notre but est de trouver toutes les voyelles dans notre chaine initiale, on peut le faire en vérifiant si la première lettre est une voyelle, puis la deuxième etc... 
+4. Maintenant notre but est de trouver toutes les voyelles dans notre chaine initiale, on peut le faire en vérifiant si la première lettre est une voyelle, puis la deuxième etc...
 Créer donc une boucle qui parcours toutes les lettres de notre chaine de caractères. A l'intérieur de la boucle afficher simplement la lettre courante.
 
 5. Maintenant nous devons vérifier si la lettre courante est une voyelle autrement dit si la lettre courante est une lettre du tableau `voyels`. Utiliser la méthode `indexOf` des tableaux pour faire ca.
@@ -198,9 +198,9 @@ C'est votre boulot de créer ces informations en utilisant les structures de don
 }
 ```
 
-4. Remplir le tableau `_players` avec des données dans le format spécifique : 
+4. Remplir le tableau `_players` avec des données dans le format spécifique :
 
-```js 
+```js
 {
     opponent: "Broncos",
     teamPoints: 42,
