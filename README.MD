@@ -188,7 +188,7 @@ C'est votre boulot de créer ces informations en utilisant les structures de don
 
 2. Notre équipe a des joueurs qui jouent des matches. Nous voulons représenter les deux. Ajouter deux propriétés à votre objet : `_players` et  `_games` toutes les deux étant des tableaux vides.
 
-3. Remplir le tableau _players avec des données dans le format spécifique :
+3. Remplir le tableau `_players` avec des données dans le format spécifique :
 
 ```js
 {
@@ -198,7 +198,7 @@ C'est votre boulot de créer ces informations en utilisant les structures de don
 }
 ```
 
-4. Remplir le tableau `_players` avec des données dans le format spécifique :
+4. Remplir le tableau `_games` avec des données dans le format spécifique :
 
 ```js
 {
