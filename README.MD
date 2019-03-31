@@ -223,3 +223,65 @@ C'est votre boulot de créer ces informations en utilisant les structures de don
 11. Ecrire une fonction qui permet de trouver le joueur le plus agé.
 
 12. Bonus: Trier les joueurs par ordre alphabétique.
+
+
+# Exo-7 : Aller plus loin
+
+Nous allons essayer de nous rapprocher d'un site marchand.
+Nous vous fournissons un jeu de données qui reprends des articles qu'on peut retrouver sur un site de commerce type leboncoin.
+
+Dans cet exercice, vous allez lier la partie HTML et Javascript.
+Ces manipulations seront à faire avec du pur Javascript, cela vous permettra de mieux comprendre la partie JQuery qui suivra.
+
+Voici quelques pages de docs pouvant vous servir.
+https://www.w3schools.com/js/js_htmldom.asp
+https://developer.mozilla.org/fr/docs/Apprendre/JavaScript/Client-side_web_APIs/Manipulating_documents
+https://www.tutorialrepublic.com/javascript-tutorial/javascript-dom-manipulation.php
+https://dom-tutorials.appspot.com/static/index.html
+
+Voici quelques idées afin de mettre en pratique ce que vous avez appris dans un contexte un peu plus concret:
+
+1. Afficher les items fournis dans la console
+
+2. Créer une variabe contenant une table de correspondance entre le type utilisé dans les données et le type à afficher. Ex : videoGame => Jeux Vidéos.
+
+3. Répéter le 1 en affichant le type traduit
+
+4. Créer une champ texte et un bouton. Lorsqu'on clique sur le bouton, on n'affiche que les articles que du type écrit.
+
+5. Faire une checkbox pour afficher ou non les items en rupture de stock.w
+
+6. Ajouter la possibilité de trier les articles par nom ASC/DESC et/ou par prix ASC/DESC.
+
+7. Ajouter un formulaire simple permettant d'ajouter un objet à la liste d'objets.
+
+8. Modifier la structure de données (data.js) afin d'avoir une structure de données comme décrit dans le fichier datas2.js (remonter le type d'un niceau et ajouter un contact à l'objet)
+
+9. Afficher tous les contacts.
+
+10. Faites fonctionner votre page avec cette nouvelle structure.
+
+# Exo-7-bonus : Aller vraiment plus loin
+
+Faire les exercices en console c'est bien, mais il est plus intéressant d'utiliser la page web fournie.
+Le but final sera d'adapter l'exercice 7 en affichant les objets dans la table fournie au lieu de la console.
+Pour cela reprenez votre datas.js issu de 10. Nous allons utiliser la page html fournie.
+
+Nous proposons l'utilisation de bootstrap 4.3 (https://getbootstrap.com/docs/4.3/getting-started/introduction/)
+Ce n'est pas obligatoire mais c'est un peu plus joli.
+
+Vous êtes libre d'adapter la table (comme ajouter le contact)
+
+1. Ajouter les objets du data dans la table.
+
+2. Faire en sorte qu'en ajoutant un nouvel objet il s'ajoute aussi dans la table.
+
+3. Adapter votre filtre et votre tri à la table.
+
+4. Transformer le filtre (anciennement un champ texte) en une liste déroulante basée sur votre datas (il faut évidemment afficher la traduction et s'il n'y en a pas afficher le type simple).
+
+5. Ajouter une checkbox au début de chaque ligne pour pouvoir sélectionner un ou plusieurs objets.
+
+6. Ajouter un panier basé sur les items sélectionnés et réduira les quantités disponibles. (Vous pourrez changer la structure de données afin d'avoir des id)
+
+7. Afficher le nombre d'artcile et le prix du panier. Une fois qu'on valide le panier on veut déduire les quantités disponibles des items sélectionnées.
