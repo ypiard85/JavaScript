@@ -243,21 +243,22 @@ https://dom-tutorials.appspot.com/static/index.html
 
 Voici quelques idées afin de mettre en pratique ce que vous avez appris dans un contexte un peu plus concret:
 
-1. Afficher les items fournis dans la console
+1. Parcourir les items fournis pour les afficher un à un dans la console
 
-2. Créer une variabe contenant une table de correspondance entre le type utilisé dans les données et le type à afficher. Ex : videoGame => Jeux Vidéos.
+2. Créer un objet qui servira à traduire les types. Cet objet aura pour structure {type : "type traduit"}. Par exemple {videoGame:"Jeux Vidéos"}.
 
-3. Répéter le 1 en affichant le type traduit
+3. Ajouter une nouvelle clé aux objets existants pour sotcker le type traduit. Répéter le 1 pour vérifier le type traduit
 
 4. Créer une champ texte et un bouton. Lorsqu'on clique sur le bouton, on n'affiche que les articles que du type écrit.
 
-5. Faire une checkbox pour afficher ou non les items en rupture de stock.w
+5. Faire une checkbox pour afficher ou non les items en rupture de stock.
 
-6. Ajouter la possibilité de trier les articles par nom ASC/DESC et/ou par prix ASC/DESC.
+6. Ajouter la possibilité de trier les articles par nom ou par prix  et donner le choix de trier par ordre ASC/DESC.
 
 7. Ajouter un formulaire simple permettant d'ajouter un objet à la liste d'objets.
 
-8. Modifier la structure de données (data.js) afin d'avoir une structure de données comme décrit dans le fichier datas2.js (remonter le type d'un niceau et ajouter un contact à l'objet)
+8. Modifier la structure de données (data.js) afin d'avoir une structure de données comme décrit dans le fichier datas2.js (remonter le type d'un niveau et ajouter un contact à l'objet).
+Ceci permettra d'avoir une structure qui liste les catégories composées d'une clé type et une clé items qui soncitent tous les objets qui correspondent au type de la catégorie.
 
 9. Afficher tous les contacts.
 
@@ -272,9 +273,10 @@ Pour cela reprenez votre datas.js issu de 10. Nous allons utiliser la page html 
 Nous proposons l'utilisation de bootstrap 4.3 (https://getbootstrap.com/docs/4.3/getting-started/introduction/)
 Ce n'est pas obligatoire mais c'est un peu plus joli.
 
-Vous êtes libre d'adapter la table (comme ajouter le contact)
+Vous êtes libre d'adapter la table (comme ajouter une colonne contact).
 
-1. Ajouter les objets du data dans la table.
+
+1. Afficher les objets du data dans la table.
 
 2. Faire en sorte qu'en ajoutant un nouvel objet il s'ajoute aussi dans la table.
 
