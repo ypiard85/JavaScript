@@ -58,7 +58,7 @@ Lorsque nous faisons cette convertion, il est très probable d'avoir un nombre a
 5. Nous voulons modifier le programme afin de demander la température en Kelvin à l'utilisateur et lui afficher ensuite les convertions dans le console du navigateur.
 Remplacer la première ligne de code par :
 
-`var kelvin = prompt('Quelle est la température en Kelvin aujourd'hui ?');`
+`var kelvin = prompt("Quelle est la température en Kelvin aujourd'hui ?");`
 
 et relancer le programme.
 
