@@ -15,7 +15,7 @@
         var city = 'London';   //déclaration de la variable city qui prend pour valeur la chaîne de caractères "London"
         var age = 32;          //déclaration de la variable age qui prend pour valeur l'entier 32
         var isRed = true;      //déclaration de la variable isRed qui prend pour valeur le booléen true
-        var isOld = age > 80;  //déclaration de la variable isOld 
+        var isOld = age > 80;  //déclaration de la variable isOld qui indique que l'âge est inférieur à 80
 
         var previousJobs = ['lawyer', 'developper', 'Professionnal climber']; //déclaration de la variable previousjobs qui 
                                                                               //prend pour valeur le tableau (array) : 
@@ -56,10 +56,16 @@
 
         /* Section 2: */
 
-        // afficher la ville dans laquele Joe vit.     
-
+        // afficher la ville dans laquelle Joe vit.   
+  	    console.log(city);
+	
         // afficher si Joe est roux ou pas.
-
+		if (isRed === true){
+            console.log('Joe est roux');
+        } else {
+            console.log('Joe n\'est pas roux')
+        }
+	
         /* Section 3 */
 
         // console.log(myVariable);
