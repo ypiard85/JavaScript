@@ -14,7 +14,7 @@ function sortRacers (inscriptionCoureur, ageCoureur, raceNumber)
         {
             console.log('You will race at 9:30 am');
         }
-        else if (ageCoureur>18)
+        else 
         {
             console.log ('you will race at 11:00 am');
         }
@@ -36,7 +36,9 @@ function sortRacers (inscriptionCoureur, ageCoureur, raceNumber)
     }
 }
 
-sortRacers(true, 50, raceNumber);          //tests avec différentes valeurs
+sortRacers(true, 18, raceNumber);          //tests avec différentes valeurs
 sortRacers(false, 99, raceNumber);
+sortRacers(true, 12, raceNumber);
+sortRacers(false, 18, raceNumber)
 
 

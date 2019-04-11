@@ -14,3 +14,5 @@ var position2 = secretMessage.indexOf('get', 'right', 'the', 'first', 'time'); /
 secretMessage.splice(position2, 5, 'know');                //on les remplace par 'know'
 
 console.log(secretMessage.join(' '));                      //afficher le message en séparant les mots par des espaces
+
+//afficher les 2 messages à la fin
