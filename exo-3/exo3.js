@@ -18,7 +18,7 @@ function getUserChoice(userInput)
 
 function getComputerChoice()
 {
-    let number = Math.floor(Math.random()*(2-0+1)+0);
+    let number = Math.floor(Math.random()*3);
     console.log(number);
     if (number === 0)
     {
