@@ -119,3 +119,6 @@ function oldestPlayer (list)
 }
 
 oldestPlayer (team._players);
+
+team._players.sort(function (a, b){return a.lastName > b.lastName;});
+console.log(team._players);
