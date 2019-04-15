@@ -158,12 +158,17 @@ f.appendChild(buttonSubmit);
 document.getElementsByTagName('body')[0].appendChild(f);
 
 buttonSubmit.onclick = function AddArticle () {
-    jsonDatas.push ({
+    jsonDatas[jsonDatas.length] = {
         name: document.forms[0].elements["name"].value,
         type: document.forms[0].elements["type"].value,
         description: document.forms[0].elements["description"].value,
         price: document.forms[0].elements["price"].value,
         quantity: document.forms[0].elements["quantity"].value,
-    })
+    };
     console.log(jsonDatas);
 }
+
+f.addEventListener("submit", function (e) {
+    e.preventDefault();
+    alert('Formulaire envoyé !');
+})
