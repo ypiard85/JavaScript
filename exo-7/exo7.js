@@ -171,4 +171,25 @@ buttonSubmit.onclick = function AddArticle () {
 f.addEventListener("submit", function (e) {
     e.preventDefault();
     alert('Formulaire envoyé !');
-})
+});
+
+
+console.log (jsonDatas);
+
+for (var i=0; i < jsonDatas.length; i++)
+    {
+        for (var j=0; j < jsonDatas[i].items.length; j++)
+        {
+            console.log(jsonDatas[i].items[j]["contact"]);
+        }
+
+    }
+
+
+
+
+
+
+
+
+
