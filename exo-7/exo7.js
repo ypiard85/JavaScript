@@ -20,7 +20,6 @@ function addTranslatedType (data1, data2)                        //méthode 2 aj
 }
 
 addTranslatedType(jsonDatas, typesTraduits);                     //appel fonction
-console.log(jsonDatas);
 
 
 var input = document.createElement("INPUT");      // Créer un élément <input>
@@ -120,8 +119,51 @@ btnTriPrixD.onclick = function ()                          //fonction qui trie p
 }
 
 
+                                                                       //formulaire ajout article
+var f = document.createElement("form");
+f.setAttribute('method',"get");
+f.setAttribute('action',"index.html");
 
+var inputName = document.createElement("input");                        //input "nom"
+inputName.setAttribute('type',"text"); 
+inputName.setAttribute('name',"name");
 
+var inputType = document.createElement("input");                       //input "type"
+inputType.setAttribute('type',"text"); 
+inputType.setAttribute('name',"type");
 
+var inputDescr = document.createElement("input");                               //input "description"
+inputDescr.setAttribute('type',"text"); 
+inputDescr.setAttribute('name',"description");
 
+var inputPrice = document.createElement("input");                              //input "prix"
+inputPrice.setAttribute('type',"text"); 
+inputPrice.setAttribute('name',"price");
 
+var inputQuant = document.createElement("input");                              //input "quantité"
+inputQuant.setAttribute('type',"text"); 
+inputQuant.setAttribute('name',"quantity");
+
+var buttonSubmit = document.createElement("input");                              //bouton "valider"
+buttonSubmit.setAttribute('type',"submit");
+buttonSubmit.setAttribute('value',"Ajouter article");
+
+f.appendChild(inputName);
+f.appendChild(inputType);
+f.appendChild(inputDescr);
+f.appendChild(inputPrice);
+f.appendChild(inputQuant);
+f.appendChild(buttonSubmit);
+
+document.getElementsByTagName('body')[0].appendChild(f);
+
+buttonSubmit.onclick = function AddArticle () {
+    jsonDatas.push ({
+        name: document.forms[0].elements["name"].value,
+        type: document.forms[0].elements["type"].value,
+        description: document.forms[0].elements["description"].value,
+        price: document.forms[0].elements["price"].value,
+        quantity: document.forms[0].elements["quantity"].value,
+    })
+    console.log(jsonDatas);
+}
