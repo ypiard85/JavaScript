@@ -75,7 +75,7 @@ var jsonDatas=[
 			}
 		]	
 	},{
-		"type" : "videogame",
+		"type" : "videoGame",
 		"items" : [
 			{	
 				"name" :"Mario Bros",
