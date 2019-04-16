@@ -40,16 +40,17 @@ var t = document.createTextNode("Valider");       // Créer un noeud textuel
 btn.appendChild(t);                               // Ajouter le texte au bouton
 document.body.appendChild(btn);                   // Ajoute la balise <button> à la balise <body>
 
-var input = document.querySelector('input');
+//var input = document.querySelector('input');
 
 var checkbox = document.createElement("INPUT");
 checkbox.setAttribute("type", "checkbox");
 document.body.appendChild(checkbox);
 
 btn.onclick = function () {                       //fonction qui affiche les objets du type choisi
+    console.log("hello");
     for (var i=0; i < jsonDatas.length; i++)
     {
-        if (jsonDatas[i].translatedType === input.value)        //si le type de l'objet i est identique au type saisi
+        if (jsonDatas[i].translatedType === input.value || jsonDatas[i].type === input.value)        //si le type de l'objet i est identique au type saisi
         {
             console.log(checkbox.checked);
             if (checkbox.checked === true)                        //si la checkbox est cochée
@@ -111,7 +112,7 @@ btnTriNomD.onclick = function ()                          //clic sur bouton = ap
 {
     function trierParNom (a,b)                            //fonction qui trie par nom (ordre inverse alphab.)  
     {
-        return b.name < a.name;
+        return a.name < b.name;
     }
     
     allArticles.sort(trierParNom);                      //on applique le tri au tableau des articles
