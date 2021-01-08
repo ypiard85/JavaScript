@@ -3,6 +3,7 @@
 Afin de faire ces exercices, il est préférable d'avoir réalisé les tutoriels de 1 à 6 du site [codecademy](https://www.codecademy.com/).
 Une fois fait, ces exercices vous permettront de valider les acquis.
 
+
 # Exo-0 - Lecture de code Javascript.
 
 Avant d'écrire du code javascript, il est important de savoir en lire, c'est le but de cette partie.
@@ -35,15 +36,17 @@ Décommenter la ligne puis recharger la page.
 
 Que se passe-t-il et pourquoi ?
 
+
+
 # Exo-1 - Les variables
 
 La température aujourd'hui est de 294 Kelvin.
 
-1. Pour commencer, créer une variable `kelvin` qui prends pour valeur 294;
+1. Pour commencer, créer une variable `kelvin` qui prend pour valeur 294;
 
 Nous pouvons aussi exprimer une température en Celsius. La température en Celsius est de 273 degrés inférieure à celle en Kelvin.
 
-2. Convertisser la température en Kelvin en stockant le résultat dans une variable nommée `celsius`.
+2. Convertissez la température en Kelvin en stockant le résultat dans une variable nommée `celsius`.
 Ecrire un commentaire pour expliquer cette ligne de code.
 
 Nous pouvons aussi exprimer une température en Fahrenheit avec la formule :
@@ -61,6 +64,7 @@ Remplacer la première ligne de code par :
 `var kelvin = prompt("Quelle est la température en Kelvin aujourd'hui ?");`
 
 et relancer le programme.
+
 
 
 # Exo-2 - Les conditions
@@ -83,6 +87,7 @@ Vous pouvez utiliser cette expression pour avoir un numéro de coureur aléatoir
 5. Entrer différentes combinaisons de valeurs pour les deux variables et vérifier le bon fonctionnement de votre programme.
 
 6. Ajouter un block `else` dans votre code disant simplement : 'Go to see the registration desk' pour les personnes ne rentrant pas dans les cas précédents.
+
 
 
 # Exo-3 - Les fonctions
@@ -124,7 +129,7 @@ Cette fonction va comparer les choix et va retourner soit :
 8. Traiter maintenant le cas où l'utilisateur a choisi 'scissors'.
 
 9. Nos fonctions sont prêtes, nous pouvons maintenant commencer le jeu.
-Créer une fonction `playGame()`, à l'intérieur de celle ci, créer une variable `uChoice` qui prends pour valeur le résultat de la fonction `getUserChoice()` en ajoutant l'argument de votre choix : 'rock', 'paper', or 'scissors'.
+Créer une fonction `playGame()`, à l'intérieur de celle ci, créer une variable `userChoice` qui prends pour valeur le résultat de la fonction `getUserChoice()` en ajoutant l'argument de votre choix : 'rock', 'paper', or 'scissors'.
 Ensuite créer une autre variable `computerChoice` qui prends pour valeur le résultat de l'appel à la fonction `getComputerChoice()`.
 Afficher chacune de ses variables dans la console.
 
@@ -133,6 +138,8 @@ A l'intérieur de la fonction `playGame()`, appeller la fonction `determineWinne
 Maintenant appeler la fonction `playGame()`
 
 11. On va ajouter un petit code secret afin d'être certain de gagner dans tous les cas : si l'utilisateur rentre 'bomb' alors il a gagné. Modifier votre code en fonction.
+
+
 
 # Exo-4 - Les tableaux.
 
@@ -147,6 +154,8 @@ Vous aurez besoin de la [documentation sur les tableaux](https://developer.mozil
 5. Utiliser une méthode pour ajouter la chaine "Programming" en début de tableau.
 6. Utiliser une méthode pour remplacer les mots 'get', 'right', 'the', 'first', 'time' par 'know'.
 7. Utiliser la méthode `.join` pour afficher le message secret à la console.
+
+
 
 # Exo-5 - Les boucles
 
@@ -175,6 +184,7 @@ Créer donc une boucle qui parcours toutes les lettres de notre chaine de caract
 Utiliser les méthodes `join('')` et `toUpperCase()` pour un bon formattage.
 
 8. Lancer votre programme et chanter la traduction !
+
 
 
 # Exo-6 : Les objets
@@ -227,10 +237,11 @@ C'est votre boulot de créer ces informations en utilisant les structures de don
 12. Bonus: Trier les joueurs par ordre alphabétique.
 
 
+
 # Exo-7 : Aller plus loin
 
 Nous allons essayer de nous rapprocher d'un site marchand.
-Nous vous fournissons un jeu de données qui reprends des articles qu'on peut retrouver sur un site de commerce type leboncoin.
+Nous vous fournissons un jeu de données qui reprend des articles qu'on peut retrouver sur un site de commerce type leboncoin.
 
 Dans cet exercice, vous allez lier la partie HTML et Javascript.
 Ces manipulations seront à faire avec du pur Javascript, cela vous permettra de mieux comprendre la partie JQuery qui suivra.
@@ -247,9 +258,9 @@ Voici quelques idées afin de mettre en pratique ce que vous avez appris dans un
 
 2. Créer un objet qui servira à traduire les types. Cet objet aura pour structure {type : "type traduit"}. Par exemple {videoGame:"Jeux Vidéos"}.
 
-3. Ajouter une nouvelle clé aux objets existants pour sotcker le type traduit. Répéter le 1 pour vérifier le type traduit
+3. Ajouter une nouvelle clé aux objets existants pour stocker le type traduit. Répéter le 1 pour vérifier le type traduit
 
-4. Créer une champ texte et un bouton. Lorsqu'on clique sur le bouton, on n'affiche que les articles que du type écrit.
+4. Créer un champ texte et un bouton. Lorsqu'on clique sur le bouton, on n'affiche que les articles que du type écrit.
 
 5. Faire une checkbox pour afficher ou non les items en rupture de stock.
 
@@ -263,6 +274,8 @@ Ceci permettra d'avoir une structure qui liste les catégories composées d'une 
 9. Afficher tous les contacts.
 
 10. Faites fonctionner votre page avec cette nouvelle structure.
+
+
 
 # Exo-7-bonus : Aller vraiment plus loin
 
@@ -286,6 +299,6 @@ Vous êtes libre d'adapter la table (comme ajouter une colonne contact).
 
 5. Ajouter une checkbox au début de chaque ligne pour pouvoir sélectionner un ou plusieurs objets.
 
-6. Ajouter un panier basé sur les items sélectionnés et réduira les quantités disponibles. (Vous pourrez changer la structure de données afin d'avoir des id)
+6. Ajouter un panier basé sur les items sélectionnés et réduire les quantités disponibles. (Vous pourrez changer la structure de données afin d'avoir des id)
 
-7. Afficher le nombre d'artcile et le prix du panier. Une fois qu'on valide le panier on veut déduire les quantités disponibles des items sélectionnées.
+7. Afficher le nombre d'articles et le prix du panier. Une fois qu'on valide le panier, déduire les quantités achetées des stocks des items sélectionnées.

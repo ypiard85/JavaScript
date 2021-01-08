@@ -1,4 +1,4 @@
-var jsonDatas=[
+var jsonDatas = [
 	{
 		"type" : "car",
 		"items": [
@@ -97,7 +97,7 @@ var jsonDatas=[
 				"type" : "show",
 				"description" : "",
 				"price" : 800,
-				"quantity" : 10,
+				"quantity" : 0,
 				"contact" : {
 					"lastName" 	: "Ubuntu",
 					"firstName"	: "Peter",

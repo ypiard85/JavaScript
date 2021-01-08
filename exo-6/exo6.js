@@ -1,7 +1,7 @@
-// Partie 8 code academy
 console.log("exo-6");
 
-// commenter cette ligne de code.
+// PARTIE 1 
+
 var joeInfo = {
     name: "Joe's house",
     rooms: 5,
@@ -12,12 +12,15 @@ var joeInfo = {
 
 // afficher le nombre de voitures de Joe
 console.log(joeInfo.cars);
-// changer le nombre de salle de bains de Joe : il n'en possède au'une.
+// changer le nombre de salle de bains de Joe : il n'en possède qu'une.
 joeInfo.bathrooms = 1;
 console.log(joeInfo.bathrooms);
-// Joe vient d'acquérir un garage changer la structure pour le refléter.
+// Joe vient d'acquérir un garage : changer la structure pour le refléter.
 joeInfo.garage = 1;
 console.log(joeInfo.garage);
+
+
+// PARTIE 2
 
 var team = {};
 team._players = [];
@@ -56,31 +59,27 @@ team._games = [{
     opponentGoals: 1
 }]
 
-function addPlayer (first, last, age)
-{
-    team._players[team._players.length] = {firstName: first, lastName: last, age: age};
+function addPlayer(first, last, age) {
+    team._players[team._players.length] = { firstName: first, lastName: last, age: age };
 }
 
-function addGame (opponent, teamGoals, opponentGoals)
-{
-    team._games[team._games.length] = {opponent: opponent, teamGoals : teamGoals, opponentGoals: opponentGoals};
+function addGame(opponent, teamGoals, opponentGoals) {
+    team._games[team._games.length] = { opponent: opponent, teamGoals: teamGoals, opponentGoals: opponentGoals };
 }
 
-addPlayer ('Luka', 'Modric', 33);
-addPlayer ('Paul', 'Pogba', 27);
-addPlayer ('Antoine', 'Griezmann', 28);
+addPlayer('Luka', 'Modric', 33);
+addPlayer('Paul', 'Pogba', 27);
+addPlayer('Antoine', 'Griezmann', 28);
 console.log(team._players);
 
-addGame ('Sevilla FC', 4, 0);
-addGame ('Manchester Utd', 1, 0);
-addGame ('Bilbao', 2, 0);
+addGame('Sevilla FC', 4, 0);
+addGame('Manchester Utd', 1, 0);
+addGame('Bilbao', 2, 0);
 console.log(team._games);
 
-function goalsSum ()
-{   
+function goalsSum() {
     var goalsTotal = 0;
-    for (var i = 0; i<team._games.length; i++)
-    {
+    for (var i = 0; i < team._games.length; i++) {
         goalsTotal += team._games[i].teamGoals;
     }
     console.log(goalsTotal);
@@ -88,12 +87,10 @@ function goalsSum ()
 
 goalsSum();
 
-function opponentAverage ()
-{
+function opponentAverage() {
     var average = 0;
     var opponentGoalsTotal = 0;
-    for (var i = 0; i<team._games.length; i++)
-    {
+    for (var i = 0; i < team._games.length; i++) {
         opponentGoalsTotal += team._games[i].opponentGoals;
     }
     average = opponentGoalsTotal / team._games.length;
@@ -102,23 +99,24 @@ function opponentAverage ()
 
 opponentAverage();
 
-function oldestPlayer (list) 
-{
+function oldestPlayer(list) {
     console.log(list);
     var highestAge = 0;
     var highestAgeIndex = 0;
-    for (var i=0; i<list.length; i++)
-    {
-        if (list[i].age > highestAge)
-        {
+    for (var i = 0; i < list.length; i++) {
+        if (list[i].age > highestAge) {
             highestAge = list[i].age;
-            highestAgeIndex = i;       
-         }
+            highestAgeIndex = i;
+        }
     }
     console.log("le joueur le plus âgé est", list[highestAgeIndex].firstName, list[highestAgeIndex].lastName, "et il a", highestAge, "ans");
 }
 
-oldestPlayer (team._players);
+oldestPlayer(team._players);
 
-team._players.sort(function (a, b){return a.lastName > b.lastName;});
+team._players.sort((a, b) => {
+    if (a.lastName < b.lastName) return -1
+    return a.lastName > b.lastName ? 1 : 0
+  })
+
 console.log(team._players);

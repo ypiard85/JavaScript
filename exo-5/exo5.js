@@ -1,31 +1,34 @@
 // you can write js here
 console.log('exo-5');
 
-var input0 = 'Vive le vent';
-var input = input0.toUpperCase();
+var input = 'Vive le vent';                    // 1) variable "input"
+var input = input.toUpperCase();               // convertie en majuscules => plus pratique pour la suite
 console.log(input);
-var vowels = ['A', 'E', 'I', 'O', 'U', 'Y'];
-var resultArray = [];
 
-for (let letter of input)                      //version 1 (for of et indexOf)
+var vowels = ['A', 'E', 'I', 'O', 'U', 'Y'];   // 2) Tableau des voyelles, en majuscules
+
+var resultArray = [];                          // 3) Tableau qui va stocker le résultat
+
+for (let letter of input)                      // 4) 5) 6) boucle version 1 (for of et indexOf)
 {
     console.log(letter);
-    // if (vowels.includes(letter) === true)
-    if (vowels.indexOf(letter) != -1)
-    {
+
+    if (vowels.indexOf(letter) !== -1) {
         resultArray.push(letter);
     }
-} 
-console.log(resultArray);
 
-for (let i=0 ; i<input.length ; i++)           //version 2 (for et includes)
-{
-console.log(input[i]);
-if (vowels.includes(input[i]) === true)
-{
-resultArray.push(input[i]);
 }
-}
-console.log(resultArray);
 
-//input.forEach()
+/*
+for (let i = 0; i < input.length; i++)         // bonus : boucle version 2 (for et includes)
+{
+    console.log(input[i]);
+
+    if (vowels.includes(input[i])) {
+        resultArray.push(input[i]);
+    }
+}
+*/
+
+console.log(resultArray.join(""));
+
