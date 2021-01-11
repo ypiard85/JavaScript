@@ -184,69 +184,10 @@ btnTriPrixD.onclick = function ()                                 //clic sur bou
 
 // 7. Ajouter un formulaire simple permettant d'ajouter un objet à la liste d'objets.
 
-// //******************************FORMULAIRE AJOUT ARTICLES**********************************
-
-//formulaire ajout article créé d'abord en js (je l'ai finalement refait en html)
-
-/*var f = document.createElement("form");
-f.setAttribute('method',"get");
-f.setAttribute('action',"index.html");
-f.setAttribute('id', 'f')
-
-var inputType = document.createElement("input");                                //input "type"
-inputType.setAttribute('type',"text"); 
-inputType.setAttribute('name',"type");
-
-var inputName = document.createElement("input");                                //input "nom"
-inputName.setAttribute('type',"text"); 
-inputName.setAttribute('name',"name");
-
-var inputDescr = document.createElement("input");                               //input "description"
-inputDescr.setAttribute('type',"text");  
-inputDescr.setAttribute('name',"description");
-
-var inputPrice = document.createElement("input");                               //input "prix"
-inputPrice.setAttribute('type',"text"); 
-inputPrice.setAttribute('name',"price");
-
-var inputQuant = document.createElement("input");                               //input "quantité"
-inputQuant.setAttribute('type',"text");  
-inputQuant.setAttribute('name',"quantity");
-
-var inputContact = document.createElement("input");                               //input "quantité"
-inputContact.setAttribute('type',"text");  
-inputContact.setAttribute('name',"contact");
-
-var inputLastName = document.createElement("input");                               //input "quantité"
-inputLastName.setAttribute('type',"text");  
-inputLastName.setAttribute('name',"lastName");
-
-var inputFirstName = document.createElement("input");                               //input "quantité"
-inputFirstName.setAttribute('type',"text");  
-inputFirstName.setAttribute('name',"firstName");
-
-var inputAddress = document.createElement("input");                               //input "quantité"
-inputAddress.setAttribute('type',"text");
-inputAddress.setAttribute('label',"adresse");  
-inputAddress.setAttribute('name',"address");
-
-var buttonSubmit = document.createElement("input");                             //bouton "valider"
-buttonSubmit.setAttribute('type',"submit");
-buttonSubmit.setAttribute('value',"Ajouter article");
-
-f.appendChild(inputName);
-f.appendChild(inputType);
-f.appendChild(inputDescr);
-f.appendChild(inputPrice);
-f.appendChild(inputContact);
-f.appendChild(inputLastName);
-f.appendChild(inputFirstName);
-f.appendChild(inputAddress);
-f.appendChild(buttonSubmit);
-
-document.getElementsByTagName('body')[0].appendChild(f);*/
 
 function AddArticle() {
+    let articleInserted = false;
+    outer_loop:
     for (var i = 0; i < jsonDatas.length; i++) {
 
         if (jsonDatas[i].type == [document.forms[0].elements["type"].value]) {
@@ -264,9 +205,16 @@ function AddArticle() {
                     }
                 });
 
+            articleInserted = true;
             alert('Article ajouté dans la famille ' + jsonDatas[i].type);
-            console.log(jsonDatas)
+            document.forms[0].reset();
+            console.log(jsonDatas);
+            break outer_loop;
         }
+    }
+
+    if (!articleInserted){
+    console.log('Echec de l\'insertion : la famille choisie n\'existe pas !');
     }
 }
 

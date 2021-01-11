@@ -75,7 +75,7 @@ Vous avez été recruté pour écrire un programme pour gérer les inscriptions 
 
 2. Créer une variable pour stocker l'âge du coureur.
 
-3. Chaque personne qui s'inscrit a un numéro de coureur supérieur à celui inscrit auparavant. Ecrire une condition qui vérifie si la personne n'est pas déjà inscrite, et ajouter 1000 à son numéro si ce n'est pas le cas.
+3. Chaque personne qui s'inscrit a un numéro de coureur supérieur à celui inscrit auparavant. Ecrire une condition qui vérifie si la personne est déjà inscrite, et ajouter 1000 à son numéro si ce n'est pas le cas.
 Vous pouvez utiliser cette expression pour avoir un numéro de coureur aléatoire.
 `var raceNumber = Math.floor(Math.random()*1000);`
 
