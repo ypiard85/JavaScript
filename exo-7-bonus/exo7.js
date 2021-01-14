@@ -9,7 +9,7 @@ for (var i = 0; i < jsonDatas.length; i++)               //on parcourt les caté
     for (var j = 0; j < jsonDatas[i].items.length; j++)  //puis les articles de chaque catégorie
     {
         jsonDatas[i].items[j].type = jsonDatas[i].type;  // on récupère le type de l'objet
-        jsonDatas[i].items[j].contact = jsonDatas[i].items[j].contact.firstName + ' ' + jsonDatas[i].items[j].contact.lastName ;
+        jsonDatas[i].items[j].contact = jsonDatas[i].items[j].contact.firstName + ' ' + jsonDatas[i].items[j].contact.lastName;
         // on récupère les infos du contact (objet) qu'on met en forme : prénom + nom  
         allArticles.push(jsonDatas[i].items[j]);         //on ajoute chaque article au tableau avec push
     }
@@ -34,7 +34,7 @@ function tableDisplay() {
     console.log(allArticles);
 }
 
-tableDisplay();  
+tableDisplay();
 
 
 // ****************************** 2. Faire en sorte qu'en ajoutant un nouvel objet, il s'ajoute aussi dans la table. *******************************
@@ -45,18 +45,17 @@ function addArticle() {         //clic sur valider : appel fonction ajout
         "description": document.forms[0].elements["description"].value,
         "price": document.forms[0].elements["price"].value,
         "quantity": document.forms[0].elements["quantity"].value,
-        "contact": document.forms[0].elements["firstName"].value + ' ' +  document.forms[0].elements["lastName"].value,
+        "contact": document.forms[0].elements["firstName"].value + ' ' + document.forms[0].elements["lastName"].value,
         "type": document.forms[0].elements["type"].value
     });
 }
-                                
+
 
 f.addEventListener("submit", function (e) {      //clic sur valider (submit) : déclenchement de la fonction
 
     e.preventDefault();                          //ne pas actualiser la page (pour conserver les articles ajoutés)
 
     addArticle();                                // appel fonction ajout article
-
     alert('Article ajouté');                     //afficher une fenêtre pop-up pour confirmer l'ajout
 
     var Parent = document.getElementById("tbody");  //retrouver le body du tableau
@@ -78,5 +77,5 @@ f.addEventListener("submit", function (e) {      //clic sur valider (submit) : d
 
 // 6. Ajouter un panier basé sur les items sélectionnés et réduire les quantités disponibles. (Vous pourrez changer la structure de données afin d'avoir des id)
 
-// 7. Afficher le nombre d'artcile et le prix du panier. Une fois qu'on valide le panier on veut déduire les quantités disponibles des items sélectionnées.
+// 7. Afficher le nombre d'articles et le prix du panier. Une fois qu'on valide le panier on veut déduire les quantités disponibles des items sélectionnées.
 

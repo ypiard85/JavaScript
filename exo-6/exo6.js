@@ -16,7 +16,7 @@ console.log(joeInfo.cars);
 joeInfo.bathrooms = 1;
 console.log(joeInfo.bathrooms);
 // Joe vient d'acquérir un garage : changer la structure pour le refléter.
-joeInfo.garage = 1;
+joeInfo.garage = true;
 console.log(joeInfo.garage);
 
 
@@ -103,12 +103,14 @@ function oldestPlayer(list) {
     console.log(list);
     var highestAge = 0;
     var highestAgeIndex = 0;
+
     for (var i = 0; i < list.length; i++) {
         if (list[i].age > highestAge) {
             highestAge = list[i].age;
             highestAgeIndex = i;
         }
     }
+    
     console.log("le joueur le plus âgé est", list[highestAgeIndex].firstName, list[highestAgeIndex].lastName, "et il a", highestAge, "ans");
 }
 

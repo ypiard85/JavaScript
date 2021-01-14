@@ -27,7 +27,7 @@ var typesTraduits = {
 // méthode 1 ajout types traduits
 jsonDatas.forEach(element => element.translatedType = typesTraduits[element.type]);
 
-// // méthode 2 ajout types traduits
+// méthode 2 ajout types traduits
 // function addTranslatedType(data1, data2)                        
 // {
 //     for (var i = 0; i < data1.length; i++) {

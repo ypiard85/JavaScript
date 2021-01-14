@@ -41,6 +41,6 @@ function sortRacers(inscriptionCoureur, ageCoureur) {
 sortRacers(true, 19);          //tests avec différentes valeurs
 sortRacers(false, 99);
 sortRacers(true, 12);
-sortRacers(false, 18)
+sortRacers(false, 5)
 
 

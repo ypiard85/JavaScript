@@ -2,8 +2,6 @@ var kelvin = prompt("Quelle est la température en Kelvin aujourd'hui ?");
 
 kelvin = parseInt(kelvin);              //on convertit la saisie en nombre entier
 
-// kelvin = Number(kelvin);             //on fait comprendre au programme que c'est bien un nombre
-
 celsius = kelvin - 273;                 //on convertit en degrés celsius
 
 let fahrenheit = celsius * (9/5) + 32;  //on multiplie celsius par 9/5 et on lui ajoute 32 pour obtenir fahrenheit
