@@ -63,6 +63,7 @@ Remplacer la première ligne de code par :
 et relancer le programme.
 
 
+
 # Exo-2 - Les conditions
 
 Vous avez été recruté pour écrire un programme pour gérer les inscriptions d'une course à pied. Tous les adultes courront le matin et tous les personnes qui ont moins de 18 ans l'après midi. Suivez les instructions afin de développer la logique du programme.
@@ -70,6 +71,12 @@ Vous avez été recruté pour écrire un programme pour gérer les inscriptions 
 1. Créer une variable pour stocker si un coureur est déjà inscrit ou pas. Quel est le type de cette variable ?
 
 2. Créer une variable pour stocker l'âge du coureur.
+
+
+
+///////////
+ ////////
+///////////
 
 3. Chaque personne qui s'inscrit a un numéro de coureur supérieur à celui inscrit auparavant. Ecrire une condition qui vérifie si la personne n'est pas déjà inscrite, et ajouter 1000 à son numéro si ce n'est pas le cas.
 Vous pouvez utiliser cette expression pour avoir un numéro de coureur aléatoire.
@@ -97,6 +104,7 @@ Notre code va se décomposer en 4 parties :
 
 1. Créer une fonction `getUserChoice()` qui prends en paramètre un seul argument `userInput`
 
+<!--Régler le probleme avec toLowerCase()-->
 2. Puisque nous ne pouvons pas être certain que l'utilisateur va taper  'Rock' ou 'rock', nous allons dans un premier temps utiliser la fonction `toLowerCase()` pour rendre minuscule la chaine de caractère `userInput`.
 
 3. Nous devons aussi nous assurer que l'utilisateur rentre bien un des trois choix : 'rock', 'paper', ou 'scissors'.
@@ -116,7 +124,7 @@ Cette fonction va comparer les choix et va retourner soit :
 * Lost : l'utilisateur a perdu.
 
 6. Commencons par le cas d'égalité, à l'intérieur de la fonction `determineWinner()`, écrire une condition qui vérifie si le choix de l'utilisateur est égal à celui de l'ordinateur. Si c'est le cas, retourner le chaine de caractères 'Tied'.
-
+//
 6. Si ce n'est pas une égalité alors quelqu'un a gagné. Commencer par vérifier si `userChoice` est `rock`. A l'intérieur de cette condition, vérifier si le choix de l'ordinateur est 'scissors', si oui alors retourner 'Won' sinon retourner 'Lost'.
 
 7. Ensuite, écriver une nouvelle condition pour déterminer si le choix de l'utilisateur est 'paper'. A l'intérieur de cette condition, en fonction du choix de l'ordinateur, retourner 'Lost' ou 'Won'
@@ -130,10 +138,12 @@ Afficher chacune de ses variables dans la console.
 
 10. Affichons maintenant le vainqueur.
 A l'intérieur de la fonction `playGame()`, appeller la fonction `determineWinner()` avec en paramètre les valeurs des variables `uChoice` et `computerChoice`. Pour connaitre le vainqueur vous devez mettre l'appel de la fonction à l'intérieur d'un `console.log()`.
+
 Maintenant appeler la fonction `playGame()`
 
 11. On va ajouter un petit code secret afin d'être certain de gagner dans tous les cas : si l'utilisateur rentre 'bomb' alors il a gagné. Modifier votre code en fonction.
 
+//
 # Exo-4 - Les tableaux.
 
 `var secretMessage = ["Learning", "isn't", "about", "what", "you", "get", "easily", "the", "first", "time,", "it's", "about", "what", "you", "can", "figure", "out.", "-2015,", "Chris", "Pine,", "Learn", "JavaScript"];`
@@ -148,6 +158,7 @@ Vous aurez besoin de la [documentation sur les tableaux](https://developer.mozil
 6. Utiliser une méthode pour remplacer les mots 'get', 'right', 'the', 'first', 'time' par 'know'.
 7. Utiliser la méthode `.join` pour afficher le message secret à la console.
 
+//
 # Exo-5 - Les boucles
 
 Les baleines (!) traduisent les phrases comme : 'Turpentine and turtles' par: 'UEIEAUE'.
@@ -162,7 +173,7 @@ Pour faire cette traduction, nous allons utiliser des boucles.
 
 3. Nous allons stocker la chaine traduite dans un tableau. Créer donc une variable `resultArray` dont la valeur est un tableau vide.
 
-4. Maintenant notre but est de trouver toutes les voyelles dans notre chaine initiale, on peut le faire en vérifiant si la première lettre est une voyelle, puis la deuxième etc...
+4. Maiotre bntenant nut est de trouver toutes les voyelles dans notre chaine initiale, on peut le faire en vérifiant si la première lettre est une voyelle, puis la deuxième etc...
 Créer donc une boucle qui parcours toutes les lettres de notre chaine de caractères. A l'intérieur de la boucle afficher simplement la lettre courante.
 
 5. Maintenant nous devons vérifier si la lettre courante est une voyelle autrement dit si la lettre courante est une lettre du tableau `voyels`. Utiliser la méthode `indexOf` des tableaux pour faire ca.
@@ -177,10 +188,12 @@ Utiliser les méthodes `join('')` et `toUpperCase()` pour un bon formattage.
 8. Lancer votre programme et chanter la traduction !
 
 
+//
 # Exo-6 : Les objets
 
 Vous devez avoir fait le cours 8 ( exercices 1 à 7 ) de CodeAcademy pour faire cet exercice.
 
+//
 Un premier petit exercice se trouve dans le fichier javascript, commencer par répondre aux questions.
 
 Nous voulons créer et extraire des informations à propos de votre équipe de sports préférés. ( Basketball, soccer, tennis, or water polo... vous choississez )
@@ -222,7 +235,9 @@ C'est votre boulot de créer ces informations en utilisant les structures de don
 
 10. Calculer la moyenne des points de l'équipe adverse sur tous les matchs.
 
+
 11. Ecrire une fonction qui permet de trouver le joueur le plus agé.
+
 
 12. Bonus: Trier les joueurs par ordre alphabétique.
 

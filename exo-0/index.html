@@ -9,57 +9,61 @@
 
         <script type="text/javascript">
 
-        /* Section 1 */   
+        /* Section 1 */
 
-        var name = "Joe";
-        var city = 'London';
-        var age = 32;
-        var isRed = true;
-        var isOld = age > 80;
+        var name = "Joe"; //Création d'une variable pour stocker un nom
+        var city = 'London'; //Création d'une variable pour stocker une ville
+        var age = 32; //Création d'une variable pour stocker un âge
+        var isRed = true; //Création d'une variable pour stocker un boolean
+        var isOld = age > 80; //Création d'un variable pour affirmer que l'âges est supérieur à 80
 
-        var previousJobs = ['lawyer', 'developper', 'Professionnal climber'];
+        var previousJobs = ['lawyer', 'developper', 'Professionnal climber']; //Array pour stocker différents métiers
 
-        function info(height, weight) {
-            if (height > 180) {
-                console.log('Vous êtes grand');
+        function info(height, weight) { //Fonction info prend en paramètres la taille et le poids
+            if (height > 180) { //Si le paramètre taille est suppérieur à 180
+                console.log('Vous êtes grand'); //Afficher le message en retour de la condition
             }
-            if (weight < 0) {
-                console.log('oups, there is a problem');
-            } else if ( weight < 15) {
-                console.log('Are you that slim ?')
+            if (weight < 0) { //Si le poids est inférieur à 0
+                console.log('oups, there is a problem'); //Afficher le message en retour de la condition
+            } else if ( weight < 15) { //sinon si Si le paramètre taille est suppérieur à 15
+                console.log('Are you that slim ?') //Afficher le message en retour de la condition
             } else {
-                console.log('Good !')
+                console.log('Good !') //Si aucune données ne rentre dans les diffférentes conditions, afficher se message
             }
         }
 
-        info(165, 45);
+        info(165, 45); //Appel de la fonction info en remplacant les paramètres par des vrai valeurs, la fonction retournera dans la console les message demandés
 
-        var myHeight = 175;
-        var myWeight = 86;
+        var myHeight = 175; //Création d'une variable pour stocker ma taille
+        var myWeight = 86; //Création d'une variable pour stocker mon poids
 
-        info(myHeight, myWeight);
+        info(myHeight, myWeight); //appel de la fonction info avec comme paramètres ma taille et mon poids
 
-        info(myHeight + 15, myWeight - 100);
+        info(myHeight + 15, myWeight - 100); //affichage de la fonction info avec comme paramètres ma taille + 15 et mon poids -100
 
         function toUpper(variable) {
-            return variable.toUpperCase();
+            return variable.toUpperCase(); //La valeur (string) de retour sera en MAJUSCULE
         }
 
-        var upperName = toUpper(name);
+        var upperName = toUpper(name); //Je stock la fonction toUpper qui aura comme valuer de retour "JOE"
 
-        for (i = 0; i < 3; i = i + 1) {
-            console.log(previousJobs[i]);
+        for (i = 0; i < 3; i = i + 1) { //Je boucle sur le tableau de métiers
+            console.log(previousJobs[i]); //J'affiche la liste de tous les métiers grace à la clès de valeur [i];
         }
 
         /* Section 2: */
 
-        // afficher la ville dans laquele Joe vit.     
+        // afficher la ville dans laquele Joe vit.
+
+        console.log(city)
 
         // afficher si Joe est roux ou pas.
 
+        console.log(isRed)
+
         /* Section 3 */
 
-        // console.log(myVariable);
+        console.log(myVariable); //La console me retourne une erreur car la variable myVariable n'est pas définie.
 
         </script>
 
