@@ -1,6 +1,7 @@
 // Partie 8 code academy
 
-// commenter cette ligne de code.
+// PARTIE 1
+
 var joeInfo = {
     name: "Joe's house",
     rooms: 5,

@@ -1,57 +1,120 @@
-var jsonDatas=[
+var jsonDatas = [
 	{
-		"name" :"Fiat Punto",
 		"type" : "car",
-		"description" : "Je suis une voiture",
-		"price" : 10000,
-		"quantity" : 2
+		"items": [
+			{	
+				"name" :"Fiat Punto",
+				"description" : "Je suis une voiture",
+				"price" : 10000,
+				"quantity" : 2,
+				"contact" : {
+					"lastName" 	: "Dubois",
+					"firstName"	: "Martin",
+					"address"	: "1 Grande Rue 74000 Annecy"
+				}
+			},{
+				"name" :"Porsche 911",
+				"description" : "Je suis une belle voiture",
+				"price" : 80000,
+				"quantity" : 0,
+				"contact" : {
+					"lastName" 	: "Ubuntu",
+					"firstName"	: "Peter",
+					"address"	: "99 rue Linux 99999 Debian"
+				}
+			},{
+				"name" :"Peugeot 205",
+				"description" : "Je suis une autre voiture",
+				"price" : 2000,
+				"quantity" : 2,
+				"contact" : {
+					"lastName" 	: "Windows",
+					"firstName"	: "Steven",
+					"address"	: "88 rue du bug 88888 Vista"
+				}
+			}
+		]	
 	},{
-		"name" :"Porsche 911",
-		"type" : "car",
-		"description" : "Je suis une belle voiture",
-		"price" : 80000,
-		"quantity" : 0
-	},{
-		"name" :"Villa sur la plage",
 		"type" : "house",
-		"description" : "Quelle belle vue",
-		"price" : 870000,
-		"quantity" : 1
+		"items" : [
+			{
+				"name" :"Villa sur la plage",
+				"description" : "Quelle belle vue",
+				"price" : 870000,
+				"quantity" : 1,
+				"contact" : {
+					"lastName" 	: "Windows",
+					"firstName"	: "Steven",
+					"address"	: "88 rue du bug 88888 Vista"
+				}
+			},{
+				"name" :"Maison à la campagne",
+				"description" : "Vive le calme",
+				"price" : 170000,
+				"quantity" : 3,
+				"contact" : {
+					"lastName" 	: "Ubuntu",
+					"firstName"	: "Peter",
+					"address"	: "99 rue Linux 99999 Debian"
+				}
+			}
+		]	
 	},{
-		"name" :"Peugeot 205",
-		"type" : "car",
-		"description" : "Je suis une autre voiture",
-		"price" : 2000,
-		"quantity" : 2
-	},{
-		"name" :"Maison à la campagne",
-		"type" : "house",
-		"description" : "Vive le calme",
-		"price" : 170000,
-		"quantity" : 3
-	},{
-		"name" :"Monopoly",
 		"type" : "game",
-		"description" : "",
-		"price" : 30,
-		"quantity" : 300
+		"items" : [
+			{
+				"name" :"Monopoly",
+				"description" : "",
+				"price" : 30,
+				"quantity" : 300,
+				"contact" : {
+					"lastName" 	: "Dubois",
+					"firstName"	: "Martin",
+					"address"	: "1 Grande Rue 74000 Annecy"
+				}
+			}
+		]	
 	},{
-		"name" :"Mario Bros",
 		"type" : "videoGame",
-		"description" : "",
-		"price" : 30,
-		"quantity" : 200
+		"items" : [
+			{	
+				"name" :"Mario Bros",
+				"description" : "",
+				"price" : 30,
+				"quantity" : 200,
+				"contact" : {
+					"lastName" 	: "Intosh",
+					"firstName"	: "Mac",
+					"address"	: "77 rue de la pomme 77777 Apple"
+				}
+			}
+		]	
 	},{
-		"name" :"Place VIP concert Metallica",
 		"type" : "show",
-		"description" : "",
-		"price" : 800,
-		"quantity" : 10
-	},{
-		"name" :"Entrée au parc Astérix",
-		"type" : "show",
-		"description" : "",
-		"price" : 30,
-		"quantity" : 200
+		"items" : [
+			{
+				"name" :"Place VIP concert Metallica",
+				"type" : "show",
+				"description" : "",
+				"price" : 800,
+				"quantity" : 0,
+				"contact" : {
+					"lastName" 	: "Ubuntu",
+					"firstName"	: "Peter",
+					"address"	: "99 rue Linux 99999 Debian"
+				}
+			},{
+				"name" :"Entrée au parc Astérix",
+				"type" : "show",
+				"description" : "",
+				"price" : 30,
+				"quantity" : 200,
+				"contact" : {
+					"lastName" 	: "Intosh",
+					"firstName"	: "Mac",
+					"address"	: "77 rue de la pomme 77777 Apple"
+				}
+			}
+		]	
 	}
 ]
